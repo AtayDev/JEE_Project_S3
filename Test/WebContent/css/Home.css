@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+html, body, div{
+	height: 100%;
+	width: 100%;
+	padding:0;
+}
+
+body{
+	margin: 0;
+}
+
+li,a,button{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.kanye1{
+	max-height: 600px;
+	width: 100%;
+}
+.logo{
+	max-height: 80px;
+	max-width: 80px;
+	padding: 10px;
+}
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display: inline-block;
+	padding: 10px 10px;
+}
+.nav_links li a{
+	transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+	color:#0088a9;
+}
+button{
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+button :hover{
+	background-color: rgba(0,136,169,0.8);
+}
+
+
+.container{
+	overflow: scroll ;
+
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 80px 600px 2000px 100px;
+	grid-template-areas: "h h h h h h h h h h h h"
+						 "s s s s s s s s s s s s"
+						 "c c c c c c c c c c c c"
+						 "f f f f f f f f f f f f";
+
+}
+
+.header{
+	grid-area: h;
+	background: #393e46;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	position: sticky;
+	position: -webkit-sticky;
+  	top:0;
+  	z-index: 4;
+    
+    
+}
+.content{
+	
+
+	grid-area: c;
+	background:#0d7377 ;
+}
+.slider{
+	
+	grid-area: s;
+}
+.footer{
+	
+	grid-area: f;
+	background: #eeeeee;
+}
